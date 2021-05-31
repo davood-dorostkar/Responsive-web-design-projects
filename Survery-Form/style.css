@@ -1,0 +1,49 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body::after {
+  content: "";
+  background: url(assets/workplace.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;
+}
+body::before {
+  content: "";
+  background-color: rgb(9, 3, 95);
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 1.6;
+  text-shadow: 2px 2px 10px #3d3d3d;
+}
+#description {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 10px #3d3d3d;
+}
+
+form {
+  display: block;
+  margin: auto;
+  width: 50em;
+}
+form::before {
+  background-color: #32325c;
+  z-index: 0.5;
+}
